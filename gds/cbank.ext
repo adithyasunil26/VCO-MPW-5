@@ -57,10 +57,10 @@ cap "switch_4/vin" "switch_4/vout" -0.157143
 cap "a1" "switch_4/vin" -183.5
 cap "a0" "switch_5/vout" 4.23077
 cap "a0" "switch_5/vin" 83.635
-cap "a2" "switch_3/vout" 4.23077
-cap "a2" "switch_3/vin" 83.635
 cap "a1" "switch_4/vout" 4.23077
 cap "a1" "switch_4/vin" 83.635
+cap "switch_3/vout" "a2" 4.23077
+cap "switch_3/vin" "a2" 83.635
 cap "a3" "switch_2/vout" 4.23077
 cap "a3" "switch_2/vin" 83.635
 cap "a5" "switch_0/vout" 4.23077

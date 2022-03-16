@@ -1,46 +1,18 @@
-timestamp 1646991908
+timestamp 1647463438
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
-use filter filter_1 1 0 76050 0 1 82626
-use divbuf divbuf_19 1 0 55022 0 1 90714
-use pll_full pll_full_0 1 0 48366 0 1 199186
 use divider divider_3 1 0 63726 0 1 339084
 use divider divider_0 1 0 493606 0 1 258680
-use divbuf divbuf_25 1 0 475634 0 1 276862
-use divbuf divbuf_24 1 0 475792 0 1 281794
-use divbuf divbuf_23 1 0 475952 0 1 286566
-use pd pd_5 1 0 77346 0 1 341034
-use divbuf divbuf_18 1 0 60890 0 1 373946
-use divbuf divbuf_17 1 0 60730 0 1 369174
-use divbuf divbuf_16 1 0 60572 0 1 364242
-use divbuf divbuf_15 1 0 60572 0 1 359854
-use pd pd_4 1 0 73336 0 1 445716
-use divbuf divbuf_14 1 0 63928 0 1 467338
-use divbuf divbuf_13 1 0 63928 0 1 471726
-use divbuf divbuf_12 1 0 64086 0 1 476658
-use divbuf divbuf_11 1 0 64246 0 1 481430
-use divbuf divbuf_8 1 0 57346 0 1 526356
 use divider divider_1 1 0 500538 0 1 470950
 use ro_complete ro_complete_0 1 0 484618 0 1 479692
-use divbuf divbuf_20 1 0 469576 0 1 521934
-use cp cp_0 1 0 43822 0 1 529284
-use divbuf divbuf_10 1 0 57664 0 1 536060
-use divbuf divbuf_9 1 0 57504 0 1 531288
-use divbuf divbuf_21 1 0 469734 0 1 526866
-use divbuf divbuf_22 1 0 469894 0 1 531638
-use divbuf divbuf_7 1 0 491558 0 1 613382
-use divbuf divbuf_6 1 0 491716 0 1 618314
-use pll_full pll_full_1 1 0 62584 0 1 636276
 use ro_complete ro_complete_1 1 0 494626 0 1 657438
-use divbuf divbuf_5 1 0 491876 0 1 623086
-use divbuf divbuf_2 1 0 492194 0 1 632788
-use divbuf divbuf_4 1 0 492034 0 1 628018
-use divbuf divbuf_1 1 0 492352 0 1 637720
-use divbuf divbuf_0 1 0 488536 0 1 670010
-use divbuf divbuf_3 1 0 488694 0 1 674942
+use pd pd_5 1 0 77346 0 1 341034
+use pd pd_4 1 0 73336 0 1 445716
+use cp cp_0 1 0 43822 0 1 529284
+use filter filter_1 1 0 76050 0 1 82626
 port "io_analog[4]" 41 329294 702300 334294 704800 m5
 port "io_analog[4]" 47 318994 702300 323994 704800 m5
 port "io_analog[5]" 42 227594 702300 232594 704800 m5
@@ -78,8 +50,8 @@ port "io_in[24]" 72 -800 13364 480 13476 m3
 port "io_oeb[2]" 129 583520 14546 584800 14658 m3
 port "io_in_3v3[24]" 99 -800 14546 480 14658 m3
 port "io_in_3v3[3]" 103 583520 15728 584800 15840 m3
-port "io_in[3]" 76 583520 16910 584800 17022 m3
 port "gpio_noesd[17]" 26 -800 15728 480 15840 m3
+port "io_in[3]" 76 583520 16910 584800 17022 m3
 port "gpio_analog[17]" 8 -800 16910 480 17022 m3
 port "io_out[3]" 157 583520 18092 584800 18204 m3
 port "io_oeb[3]" 130 583520 19274 584800 19386 m3
@@ -203,6 +175,7 @@ port "gpio_noesd[7]" 33 -800 510348 480 510460 m3
 port "gpio_analog[7]" 15 -800 511530 480 511642 m3
 port "vdda1" 556 582340 540562 584800 545362 m3
 port "vssa2" 567 0 549442 1660 554242 m3
+port "vdda1" 557 582340 550562 584800 555362 m3
 port "vssa2" 566 0 559442 1660 564242 m3
 port "gpio_analog[6]" 14 583520 583562 584800 583674 m3
 port "gpio_noesd[6]" 32 583520 584744 584800 584856 m3
@@ -730,21 +703,12 @@ port "wbs_cyc_i" 607 4070 -800 4182 480 m2
 port "wbs_ack_o" 574 2888 -800 3000 480 m2
 port "wb_rst_i" 573 1706 -800 1818 480 m2
 port "wb_clk_i" 572 524 -800 636 480 m2
-port "vdda1" 557 582340 550562 584800 555362 m3
-node "m5_523158_96000#" 0 31540.2 523158 96000 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 115368000 65684 0 0
-node "m5_453050_96000#" 0 28530.1 453050 96000 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103640000 59820 0 0
 node "io_analog[4]" 0 4481.1 329294 702300 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28747280 22980 0 0
 node "io_analog[4]" 0 4453.02 318994 702300 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28454096 22836 0 0
 node "io_analog[5]" 0 4481.1 227594 702300 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28747280 22980 0 0
 node "io_analog[5]" 0 4481.1 217294 702300 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28747280 22980 0 0
 node "io_analog[6]" 0 4439.76 175894 702300 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28315648 22768 0 0
 node "io_analog[6]" 0 4411.68 165594 702300 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28022464 22624 0 0
-node "m4_523158_52000#" 0 37788 523158 52000 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 115368000 65684 0 0 0 0
-node "m4_453050_52000#" 0 34147.8 453050 52000 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103640000 59820 0 0 0 0
-node "m4_453050_146758#" 0 39989.3 453050 146758 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 129239080 61796 0 0 0 0
-node "m4_71094_342284#" 1 2973.59 71094 342284 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1806948 14120 0 0 0 0
-node "m4_57272_526846#" 0 1288.88 57272 526846 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 783396 6120 0 0 0 0
-node "m4_52840_532516#" 1 3523.23 52840 532516 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3774432 14964 0 0 0 0
 node "io_analog[4]" 0 4251.3 329294 702300 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28747280 22980 0 0 0 0
 node "io_analog[4]" 0 4224.66 318994 702300 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28454096 22836 0 0 0 0
 node "io_analog[5]" 0 4251.3 227594 702300 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28747280 22980 0 0 0 0
@@ -776,8 +740,8 @@ node "io_in[24]" 1 613.728 -800 13364 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "io_oeb[2]" 1 613.728 583520 14546 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "io_in_3v3[24]" 1 613.728 -800 14546 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "io_in_3v3[3]" 1 613.728 583520 15728 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
-node "io_in[3]" 1 613.728 583520 16910 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "gpio_noesd[17]" 1 2315.84 -800 15728 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1553072 9024 0 0 0 0 0 0
+node "io_in[3]" 1 613.728 583520 16910 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "gpio_analog[17]" 1 2299.87 -800 16910 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1549040 8952 0 0 0 0 0 0
 node "io_out[3]" 1 613.728 583520 18092 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "io_oeb[3]" 1 613.728 583520 19274 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
@@ -811,8 +775,8 @@ node "io_in[21]" 1 613.728 -800 121230 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "io_in_3v3[21]" 1 613.728 -800 122412 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0
 node "gpio_noesd[14]" 1 2303.42 -800 123594 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1549936 8968 0 0 0 0 0 0
 node "gpio_analog[14]" 1 2287.45 -800 124776 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1545904 8896 0 0 0 0 0 0
-node "vssa1" 0 19117.3 582340 136830 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42663900 30820 0 0 0 0 0 0
-node "vssa1" 0 98429.8 582340 146830 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 99115716 57196 207866592 96088 0 0 0 0
+node "vssa1" 0 19220.8 582340 136830 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42905132 30972 0 0 0 0 0 0
+node "vssa1" 0 30280 582340 146830 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70752000 44168 0 0 0 0 0 0
 node "vssd2" 0 19380.1 0 162888 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43307520 31160 0 0 0 0 0 0
 node "vssd2" 0 19163.6 0 172888 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42777480 30880 0 0 0 0 0 0
 node "vssd1" 0 6519 582340 181430 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11808000 14520 0 0 0 0 0 0
@@ -901,6 +865,7 @@ node "gpio_noesd[7]" 1 2295.44 -800 510348 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "gpio_analog[7]" 1 2283.02 -800 511530 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1544784 8876 0 0 0 0 0 0
 node "vdda1" 0 19420.2 582340 540562 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43405956 31212 0 0 0 0 0 0
 node "vssa2" 0 19120.4 0 549442 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42671472 30824 0 0 0 0 0 0
+node "vdda1" 0 28839.1 582340 550562 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 66585772 43236 0 0 0 0 0 0
 node "vssa2" 0 19228.6 0 559442 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42936492 30964 0 0 0 0 0 0
 node "gpio_analog[6]" 1 5707.55 583520 583562 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4934824 20620 0 0 0 0 0 0
 node "gpio_noesd[6]" 1 5700.45 583520 584744 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4933032 20588 0 0 0 0 0 0
@@ -1428,420 +1393,34 @@ node "wbs_cyc_i" 1 631.648 4070 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "wbs_ack_o" 1 631.648 2888 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0 0 0
 node "wb_rst_i" 1 631.648 1706 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0 0 0
 node "wb_clk_i" 1 631.648 524 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0 0 0
-node "m2_494098_659718#" 0 358.162 494098 659718 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 134640 1468 0 0 0 0 0 0 0 0
-node "li_73400_82936#" 32 52079.7 73400 82936 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33177380 77784 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_54490_89576#" 13 25154.4 54490 89576 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45760 856 14138912 76664 0 0 0 0 0 0 0 0 0 0
-node "li_72962_341836#" 920 14733 72962 341836 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4649336 37936 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_493680_472384#" 22 29947.7 493680 472384 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11569860 69984 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_116578_526242#" 37 4893.36 116578 526242 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2934336 7924 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_111700_526260#" 37 4893.36 111700 526260 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2934336 7924 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_106958_526260#" 37 4893.36 106958 526260 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2934336 7924 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_102946_526208#" 37 4893.36 102946 526208 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2934336 7924 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_52082_525878#" 129 4600.15 52082 525878 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1989456 10036 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_98510_527246#" 20 4017.41 98510 527246 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2433312 6424 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_94210_527212#" 20 4017.41 94210 527212 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2433312 6424 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_89740_527228#" 20 4017.41 89740 527228 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2433312 6424 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_84658_527246#" 20 4017.41 84658 527246 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2433312 6424 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_79646_527246#" 20 4017.41 79646 527246 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2433312 6424 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_75158_527160#" 20 4017.41 75158 527160 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2433312 6424 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_70824_527228#" 20 4017.41 70824 527228 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2433312 6424 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_64892_527178#" 20 4017.41 64892 527178 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2433312 6424 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_59470_527246#" 20 4017.41 59470 527246 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2433312 6424 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_116432_531140#" 37 4893.36 116432 531140 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2934336 7924 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_111588_531088#" 37 4893.36 111588 531088 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2934336 7924 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_106708_531174#" 37 4893.36 106708 531174 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2934336 7924 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_102582_531124#" 37 4893.36 102582 531124 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2934336 7924 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_98542_532082#" 24 3452.76 98542 532082 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1971520 5924 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_94194_532116#" 24 3452.76 94194 532116 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1971520 5924 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_89708_532082#" 24 3452.76 89708 532082 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1971520 5924 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_84864_532082#" 24 3452.76 84864 532082 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1971520 5924 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_79830_532134#" 24 3452.76 79830 532134 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1971520 5924 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_75122_532100#" 24 3452.76 75122 532100 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1971520 5924 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_70740_532116#" 24 3452.76 70740 532116 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1971520 5924 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_64902_532082#" 24 3452.76 64902 532082 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1971520 5924 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_59542_532082#" 24 3452.76 59542 532082 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1971520 5924 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_489702_636592#" 13 18596.9 489702 636592 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3507288 50452 628848 5292 0 0 0 0 0 0 0 0 0 0
-node "li_489290_631692#" 13 21140.8 489290 631692 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3461440 58472 888760 5908 0 0 0 0 0 0 0 0 0 0
-node "li_488854_626962#" 18 25060.4 488854 626962 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4864056 66948 962280 6492 0 0 0 0 0 0 0 0 0 0
-node "li_488390_621994#" 36 28402.8 488390 621994 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5481452 75528 1198284 7280 0 0 0 0 0 0 0 0 0 0
-node "li_487906_617190#" 13 31662.7 487906 617190 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5838844 84652 1543440 7952 0 0 0 0 0 0 0 0 0 0
-node "li_487414_611834#" 15 36318.2 487414 611834 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7804356 93620 1652936 8580 0 0 0 0 0 0 0 0 0 0
-node "vdda1" 73 5.59429e+06 582340 550562 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38320 1108 56784 1348 56784 1348 152063056 91196 81199744 366228 19555048688 9179224 0 0
-node "w_46994_528582#" 1914 2097.44 46994 528582 nw 0 0 0 0 428800 2620 0 0 87612 1184 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 87612 1184 87612 1184 87612 1184 0 0 0 0 0 0 0 0
-node "w_52848_529250#" 2069 630.74 52848 529250 nw 0 0 0 0 123420 1408 0 0 78300 1120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 67500 1040 67500 1040 67500 1040 67500 1040 123420 1408 0 0 0 0
-substrate "a_41202_607812#" 0 0 41202 607812 ppd 0 0 0 0 0 0 0 0 0 0 8553554100 12397920 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 74212496704 34652364 355363752 530600 355363752 530600 357709128 541544 20385668976 10096020 0 0 0 0
-cap "li_489290_631692#" "li_489702_636592#" 1950.39
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 cap "io_clamp_high[0]" "io_analog[4]" 525
-cap "li_488854_626962#" "li_489290_631692#" 2712.11
 cap "io_clamp_low[0]" "io_clamp_high[0]" 525
-cap "li_488390_621994#" "li_488854_626962#" 3085.85
 cap "io_analog[4]" "io_clamp_low[0]" 525
-cap "li_487906_617190#" "li_488390_621994#" 3227.98
 cap "io_clamp_high[1]" "io_analog[5]" 525
 cap "io_clamp_low[1]" "io_clamp_high[1]" 525
 cap "io_analog[5]" "io_clamp_low[1]" 525
 cap "io_analog[4]" "io_analog[4]" 60369.3
-cap "io_analog[4]" "io_analog[4]" 48870.4
 cap "io_clamp_high[2]" "io_analog[6]" 525
 cap "io_analog[4]" "io_analog[4]" 59753.6
-cap "vdda1" "m2_494098_659718#" 445.636
-cap "vdda1" "li_489702_636592#" 111.475
-cap "io_analog[4]" "io_analog[4]" 48372
 cap "io_clamp_low[2]" "io_clamp_high[2]" 525
-cap "vdda1" "li_489290_631692#" 190.847
 cap "io_analog[5]" "io_analog[5]" 60369.3
-cap "vdda1" "li_488854_626962#" 333.51
-cap "io_analog[5]" "io_analog[5]" 48870.4
+cap "io_analog[4]" "io_analog[4]" 48870.4
 cap "io_analog[6]" "io_clamp_low[2]" 525
-cap "vdda1" "li_488390_621994#" 450.934
-cap "li_487414_611834#" "li_487906_617190#" 2982.49
-cap "vdda1" "li_487906_617190#" 518.907
-cap "io_analog[5]" "io_analog[5]" 48870.4
+cap "io_analog[4]" "io_analog[4]" 48372
 cap "io_analog[5]" "io_analog[5]" 60369.3
-cap "io_analog[6]" "io_analog[6]" 48136.6
+cap "io_analog[5]" "io_analog[5]" 48870.4
 cap "io_analog[6]" "io_analog[6]" 59462.9
-cap "io_analog[6]" "io_analog[6]" 47638.2
+cap "io_analog[5]" "io_analog[5]" 48870.4
+cap "io_analog[6]" "io_analog[6]" 48136.6
 cap "io_analog[6]" "io_analog[6]" 58847.2
-cap "vdda1" "li_487414_611834#" 731.484
-cap "filter_1/gnd" "li_54490_89576#" 866.768
-cap "li_54490_89576#" "filter_1/a_4216_n5230#" 168.28
-cap "li_54490_89576#" "filter_1/gnd" 497.49
-cap "li_54490_89576#" "filter_1/a_4216_n5230#" 105.705
-cap "li_54490_89576#" "filter_1/gnd" 438.99
-cap "li_54490_89576#" "filter_1/a_4216_n5230#" 105.705
-cap "li_54490_89576#" "filter_1/gnd" 438.99
-cap "li_54490_89576#" "filter_1/a_4216_n5230#" 105.705
-cap "li_54490_89576#" "filter_1/gnd" 438.99
-cap "filter_1/v" "filter_1/a_4216_n5230#" -152.95
-cap "filter_1/v" "filter_1/gnd" -85.82
-cap "filter_1/a_4216_n2998#" "filter_1/v" 33.4771
-cap "filter_1/a_4216_n2998#" "filter_1/v" 18.5294
-cap "filter_1/gnd" "li_54490_89576#" 649.564
-cap "li_54490_89576#" "filter_1/a_4216_n5230#" 226.65
-cap "li_54490_89576#" "filter_1/gnd" 611.871
-cap "li_54490_89576#" "filter_1/gnd" 434.09
-cap "li_54490_89576#" "filter_1/a_4216_n5230#" 105.705
-cap "li_54490_89576#" "filter_1/gnd" 434.09
-cap "li_54490_89576#" "filter_1/a_4216_n5230#" 105.705
-cap "li_54490_89576#" "filter_1/gnd" 434.09
-cap "li_54490_89576#" "filter_1/a_4216_n5230#" 105.705
-cap "filter_1/v" "filter_1/a_4216_n5230#" -153.81
-cap "filter_1/v" "filter_1/gnd" -89.195
-cap "divbuf_19/OUT" "divbuf_19/VDD" 20.7541
-cap "divbuf_19/GND" "divbuf_19/OUT" 5.16393
-cap "divbuf_19/GND" "divbuf_19/OUT" 617.441
-cap "divbuf_19/GND" "divbuf_19/VDD" 168.304
-cap "divbuf_19/GND" "li_54490_89576#" 8.46774
-cap "pll_full_0/divbuf_0/GND" "pll_full_0/divbuf_0/VDD" 14.7744
-cap "pll_full_0/divbuf_0/GND" "pll_full_0/li_n10470_n4240#" 78.5256
-cap "pll_full_0/divbuf_0/GND" "pll_full_0/divbuf_0/VDD" 28.8172
-cap "pll_full_0/divbuf_0/GND" "pll_full_0/li_n10470_n4240#" 77.7778
-cap "pll_full_0/divbuf_0/GND" "pll_full_0/li_n10340_n3220#" 26.9231
-cap "pll_full_0/divbuf_0/GND" "pll_full_0/li_n10470_n4240#" 64.8148
-cap "pll_full_0/divbuf_0/GND" "pll_full_0/li_n10340_n3220#" 25.1799
-cap "pll_full_0/divbuf_1/VDD" "pll_full_0/divbuf_1/VDD" 0.1848
-cap "pll_full_0/divbuf_1/VDD" "pll_full_0/divbuf_1/GND" 5.6008
-cap "pll_full_0/divbuf_1/VDD" "pll_full_0/divbuf_1/GND" -6.126
-cap "pll_full_0/divbuf_1/VDD" "pll_full_0/divbuf_1/VDD" 2.0592
-cap "pll_full_0/divbuf_1/GND" "pll_full_0/divbuf_1/VDD" -107.967
-cap "pll_full_0/divbuf_1/GND" "pll_full_0/divbuf_1/VDD" 53.6752
-cap "pll_full_0/divbuf_1/GND" "pll_full_0/divbuf_1/VDD" 58.706
-cap "pll_full_0/divbuf_1/VDD" "pll_full_0/divbuf_1/GND" -266.239
-cap "divider_0/a_n940_n20#" "divider_0/gnd" 302.852
-cap "divider_0/w_n140_1520#" "divider_0/prescaler_0/li_n310_330#" 30.7675
-cap "divider_0/a_n940_n20#" "divider_0/w_n140_1520#" 96.684
-cap "divider_0/w_n140_1520#" "divider_0/prescaler_0/li_n310_330#" 55.4275
-cap "divider_0/a_n940_n20#" "divider_0/w_n140_1520#" 125.772
-cap "divbuf_25/GND" "divbuf_25/VDD" 201.056
-cap "divbuf_24/GND" "divbuf_24/VDD" 65.568
-cap "divbuf_24/GND" "divbuf_24/VDD" 191.488
-cap "divbuf_23/GND" "vdda1" 110.194
-cap "divbuf_23/GND" "divbuf_23/VDD" -180.538
-cap "pd_5/a_n420_n1430#" "pd_5/VDD" -1.42109e-14
-cap "divider_3/w_n140_1520#" "divider_3/prescaler_0/li_n310_330#" 92.0175
-cap "divider_3/a_n940_n20#" "divider_3/w_n140_1520#" 229.324
-cap "divider_3/w_2780_1920#" "m4_71094_342284#" 14.472
-cap "divider_3/li_7140_680#" "m4_71094_342284#" 130.722
-cap "divider_3/li_7140_680#" "m4_71094_342284#" -18.3425
-cap "divider_3/w_2780_1920#" "m4_71094_342284#" 2.768
-cap "divider_3/a_n940_n20#" "m4_71094_342284#" 234.196
-cap "pd_5/a_n420_n1430#" "pd_5/VDD" 209.366
-cap "divbuf_15/GND" "divbuf_15/VDD" 179.712
-cap "divbuf_15/GND" "divbuf_15/VDD" 58.944
-cap "divbuf_16/GND" "divbuf_16/VDD" 67.408
-cap "divbuf_16/GND" "divbuf_16/VDD" 171.248
-cap "divbuf_17/GND" "divbuf_17/VDD" 182.656
-cap "divbuf_18/GND" "divbuf_18/VDD" 89.488
-cap "divbuf_18/GND" "divbuf_18/VDD" 149.168
-cap "pd_4/w_0_n1460#" "a_41202_607812#" 23.7205
-cap "pd_4/a_n420_n1430#" "a_41202_607812#" 114.984
-cap "pd_4/w_0_n1460#" "pd_4/and_pd_0/GND" 67.2834
-cap "pd_4/a_n420_n1430#" "pd_4/and_pd_0/GND" 506.474
-cap "pd_4/VDD" "pd_4/tspc_r_0/VDD" 0.212
-cap "pd_4/a_n420_n1430#" "pd_4/tspc_r_0/VDD" -8.4544
-cap "pd_4/a_n420_n1430#" "pd_4/tspc_r_0/VDD" -89.6468
-cap "pd_4/VDD" "pd_4/tspc_r_0/VDD" 0.236
-cap "pd_4/a_n420_n1430#" "pd_4/tspc_r_0/VDD" 15.6864
-cap "pd_4/a_n420_n1430#" "pd_4/tspc_r_0/VDD" -69.1492
-cap "divbuf_14/GND" "divbuf_14/VDD" 191.856
-cap "divbuf_13/GND" "divbuf_13/VDD" 191.856
-cap "divider_1/a_n940_n20#" "divider_1/prescaler_0/li_n310_330#" -7.10543e-15
-cap "divbuf_12/GND" "divbuf_12/VDD" 191.856
-cap "divbuf_11/GND" "divbuf_11/VDD" 166.675
-cap "divbuf_11/GND" "divbuf_11/VDD" -256.819
-cap "ro_complete_0/ro_var_extend_0/gnd" "ro_complete_0/ro_var_extend_0/vdd" 239.004
-cap "divbuf_20/GND" "divbuf_20/VDD" 177.504
-cap "cp_0/gnd!" "cp_0/out" 6.30993
-cap "cp_0/gnd!" "cp_0/out" 40.3953
-cap "w_46994_528582#" "cp_0/a_1710_0#" 32.3913
-cap "divbuf_8/VDD" "divbuf_8/GND" 163.888
-cap "divbuf_21/GND" "divbuf_21/VDD" 353.052
-cap "w_46994_528582#" "cp_0/a_1710_0#" 128.448
-cap "w_46994_528582#" "cp_0/a_3060_0#" 5.92308
-cap "w_46994_528582#" "cp_0/a_1710_n2840#" 22.11
-cap "w_52848_529250#" "cp_0/out" 34.375
-cap "divbuf_9/VDD" "divbuf_9/VDD" 3.4
-cap "divbuf_9/GND" "divbuf_9/VDD" 163.888
-cap "divbuf_9/GND" "divbuf_9/VDD" 162.784
-cap "divbuf_22/GND" "divbuf_22/VDD" 267.904
-cap "divbuf_22/GND" "divbuf_22/VDD" -84.3128
-cap "cp_0/vdd!" "cp_0/vdd!" 0.3222
-cap "divbuf_9/GND" "divbuf_10/VDD" 66.908
-cap "divbuf_10/VDD" "divbuf_10/VDD" 3.48
-cap "divbuf_10/GND" "divbuf_10/VDD" 95.876
-cap "divbuf_7/OUT" "divbuf_7/VDD" 14.8607
-cap "divbuf_7/GND" "divbuf_7/OUT" 429.063
-cap "divbuf_7/GND" "divbuf_7/OUT" 14.1732
-cap "divbuf_7/GND" "divbuf_7/VDD" 94.1122
-cap "divbuf_7/GND" "divbuf_7/OUT" 357.887
-cap "divbuf_7/GND" "divbuf_7/VDD" 358.388
-cap "divbuf_6/OUT" "divbuf_6/VDD" 15.3846
-cap "divbuf_6/GND" "divbuf_6/OUT" 15.6154
-cap "divbuf_6/GND" "divbuf_6/OUT" 794.308
-cap "divbuf_6/GND" "divbuf_6/VDD" 187.808
-cap "divbuf_5/OUT" "divbuf_5/GND" 8.16062
-cap "divbuf_5/OUT" "divbuf_5/VDD" 14.8574
-cap "divbuf_5/GND" "divbuf_5/OUT" 2.71552
-cap "divbuf_5/GND" "divbuf_5/OUT" 572.017
-cap "divbuf_5/GND" "divbuf_5/VDD" 140.441
-cap "divbuf_5/GND" "divbuf_5/OUT" 12.8017
-cap "divbuf_5/GND" "divbuf_5/OUT" 231.706
-cap "divbuf_5/GND" "divbuf_5/VDD" 89.12
-cap "divbuf_4/OUT" "divbuf_4/VDD" 16.1429
-cap "divbuf_4/GND" "divbuf_4/OUT" 14.5161
-cap "divbuf_4/GND" "divbuf_4/VDD" 44.9043
-cap "divbuf_4/GND" "divbuf_4/OUT" 669.845
-cap "divbuf_4/GND" "divbuf_4/OUT" 3.06122
-cap "divbuf_4/OUT" "divbuf_4/VDD" 3.80639
-cap "divbuf_4/GND" "divbuf_4/VDD" 183.024
-cap "pll_full_1/divbuf_0/GND" "pll_full_1/divbuf_0/VDD" 14.7744
-cap "divbuf_2/OUT" "divbuf_2/VDD" 7.8774
-cap "divbuf_2/GND" "divbuf_2/OUT" 7.03125
-cap "divbuf_2/GND" "divbuf_2/OUT" 690.393
-cap "divbuf_2/OUT" "divbuf_2/VDD" 7.8774
-cap "divbuf_2/GND" "divbuf_2/OUT" 7.03125
-cap "pll_full_1/divbuf_0/GND" "pll_full_1/divbuf_0/VDD" 6.84409
-cap "pll_full_1/divbuf_0/GND" "pll_full_1/li_n10470_n4240#" 97.4145
-cap "pll_full_1/divbuf_0/GND" "pll_full_1/li_n10340_n3220#" 6.53846
-cap "a_41202_607812#" "pll_full_1/divbuf_0/VDD" 3.28093
-cap "divbuf_2/GND" "divbuf_2/OUT" 9.90566
-cap "divbuf_2/GND" "divbuf_2/VDD" 224.086
-cap "pll_full_1/divbuf_0/GND" "pll_full_1/divbuf_0/VDD" 21.9731
-cap "pll_full_1/divbuf_0/GND" "pll_full_1/li_n10340_n3220#" 45.5645
-cap "pll_full_1/divbuf_0/GND" "pll_full_1/li_n10470_n4240#" 123.704
-cap "a_41202_607812#" "pll_full_1/divbuf_0/VDD" 10.5335
-cap "divbuf_2/GND" "divbuf_2/VDD" 57.84
-cap "divbuf_1/GND" "divbuf_1/VDD" 25.8429
-cap "divbuf_1/OUT" "divbuf_1/VDD" 8.31285
-cap "divbuf_1/OUT" "divbuf_1/GND" 0.661765
-cap "divbuf_1/OUT" "divbuf_1/GND" 589.463
-cap "divbuf_1/GND" "divbuf_1/VDD" 25.8429
-cap "divbuf_1/GND" "divbuf_1/OUT" -0.229167
-cap "divbuf_1/OUT" "divbuf_1/VDD" 18.5106
-cap "divbuf_1/GND" "divbuf_1/OUT" 1.5
-cap "divbuf_1/GND" "divbuf_1/VDD" 176.4
-cap "ro_complete_1/cbank_2/switch_1/vin" "li_487906_617190#" 9.63198
-cap "ro_complete_1/cbank_2/switch_0/vout" "li_487906_617190#" 23.3883
-cap "ro_complete_1/cbank_2/switch_1/vin" "li_487414_611834#" 21.2011
-cap "ro_complete_1/cbank_2/switch_0/vout" "li_487414_611834#" 190.834
-cap "ro_complete_1/cbank_2/switch_3/vin" "li_488390_621994#" 11.5
-cap "ro_complete_1/cbank_2/switch_2/vin" "li_487906_617190#" 22.7246
-cap "ro_complete_1/cbank_2/switch_1/vout" "li_488390_621994#" 189.854
-cap "ro_complete_1/cbank_2/switch_1/vout" "li_487906_617190#" 231.692
-cap "ro_complete_1/cbank_2/switch_1/vin" "li_487906_617190#" 9.63198
-cap "ro_complete_1/cbank_2/gnd!" "li_489290_631692#" 1.875
-cap "ro_complete_1/cbank_2/gnd!" "li_488854_626962#" 190.811
-cap "ro_complete_1/cbank_2/switch_4/vin" "li_488854_626962#" 22.5893
-cap "ro_complete_1/cbank_2/switch_3/vin" "li_488390_621994#" 11.5
-cap "ro_complete_1/cbank_2/switch_4/vout" "li_489702_636592#" 30.1253
-cap "ro_complete_1/cbank_2/switch_5/vin" "li_489290_631692#" 20.1862
-cap "ro_complete_1/cbank_2/switch_4/vout" "li_489290_631692#" 189.48
-cap "ro_complete_1/cbank_2/switch_5/vout" "li_489702_636592#" 96.3853
-cap "a_41202_607812#" "ro_complete_1/a_n658_n10486#" 186.408
-cap "ro_complete_1/cbank_2/a1" "ro_complete_1/cbank_2/switch_1/vin" 19.0964
-cap "ro_complete_1/cbank_2/a1" "ro_complete_1/cbank_2/switch_0/vout" 44.6073
-cap "ro_complete_1/cbank_2/a0" "ro_complete_1/cbank_2/switch_1/vin" 107.849
-cap "ro_complete_1/cbank_2/a0" "ro_complete_1/cbank_2/switch_0/vout" 210.986
-cap "ro_complete_1/cbank_2/a2" "ro_complete_1/cbank_2/switch_3/vin" 57.8269
-cap "ro_complete_1/cbank_2/a2" "ro_complete_1/cbank_2/switch_1/vout" 212.143
-cap "ro_complete_1/cbank_2/a1" "ro_complete_1/cbank_2/switch_2/vin" 115.599
-cap "ro_complete_1/cbank_2/a1" "ro_complete_1/cbank_2/switch_1/vout" 259.513
-cap "ro_complete_1/cbank_2/a1" "ro_complete_1/cbank_2/switch_1/vin" 19.0964
-cap "ro_complete_1/cbank_2/switch_3/vin" "li_488390_621994#" 57.8269
-cap "ro_complete_1/cbank_2/a3" "ro_complete_1/cbank_2/switch_4/vin" 114.911
-cap "ro_complete_1/cbank_2/gnd!" "ro_complete_1/cbank_2/a3" 214.5
-cap "ro_complete_1/cbank_2/a5" "ro_complete_1/cbank_2/switch_4/vout" 55.4741
-cap "ro_complete_1/cbank_2/a4" "ro_complete_1/cbank_2/switch_5/vin" 102.686
-cap "ro_complete_1/cbank_2/a4" "ro_complete_1/cbank_2/switch_4/vout" 214.5
-cap "ro_complete_1/cbank_2/switch_5/vout" "li_489702_636592#" 55.4741
-cap "ro_complete_1/a_n658_n10486#" "a_41202_607812#" 155.832
-cap "ro_complete_1/a_n658_n10486#" "a_41202_607812#" 142.676
-cap "a_41202_607812#" "ro_complete_1/a_n658_n10486#" 234.508
-cap "ro_complete_1/ro_var_extend_0/gnd" "ro_complete_1/ro_var_extend_0/out3" 38.3065
-cap "ro_complete_1/ro_var_extend_0/gnd" "ro_complete_1/ro_var_extend_0/vdd" 202.779
-cap "ro_complete_1/ro_var_extend_0/vdd" "ro_complete_1/ro_var_extend_0/gnd" 472.383
-cap "pll_full_1/divbuf_1/GND" "pll_full_1/divbuf_1/VDD" 29.344
-cap "pll_full_1/divbuf_1/GND" "pll_full_1/divbuf_1/VDD" 37.066
-cap "divbuf_0/GND" "divbuf_0/VDD" 35.0151
-cap "divbuf_0/GND" "vdda1" 97.7032
-cap "divbuf_0/GND" "divbuf_0/VDD" -200.959
-cap "divbuf_3/GND" "vdda1" -11.4164
-cap "divbuf_3/GND" "divbuf_3/VDD" 9.84513
-cap "divbuf_3/GND" "vdda1" -3.2228
-cap "divbuf_3/GND" "divbuf_3/VDD" 57.5388
-merge "ro_complete_1/cbank_2/a0" "divbuf_7/OUT" -1672.07 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -145230 -4078 -71874 -561 0 0 0 0 0 0 0 0 0 0
-merge "divbuf_7/OUT" "li_487414_611834#"
-merge "divbuf_3/VDD" "divbuf_0/VDD" -40695.3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2520 -1108 164 -1348 164 -1348 -47320160 -62900 -4981761 -41783 -101906 -11582 0 0
-merge "divbuf_0/VDD" "pll_full_1/divbuf_1/VDD"
-merge "pll_full_1/divbuf_1/VDD" "ro_complete_1/ro_var_extend_0/vdd"
-merge "ro_complete_1/ro_var_extend_0/vdd" "divbuf_1/VDD"
-merge "divbuf_1/VDD" "divbuf_2/VDD"
-merge "divbuf_2/VDD" "divbuf_4/VDD"
-merge "divbuf_4/VDD" "divbuf_5/VDD"
-merge "divbuf_5/VDD" "divbuf_6/VDD"
-merge "divbuf_6/VDD" "divbuf_7/VDD"
-merge "divbuf_7/VDD" "divbuf_10/VDD"
-merge "divbuf_10/VDD" "divbuf_9/VDD"
-merge "divbuf_9/VDD" "divbuf_8/VDD"
-merge "divbuf_8/VDD" "m4_57272_526846#"
-merge "m4_57272_526846#" "cp_0/vdd!"
-merge "cp_0/vdd!" "m4_52840_532516#"
-merge "m4_52840_532516#" "w_52848_529250#"
-merge "w_52848_529250#" "w_46994_528582#"
-merge "w_46994_528582#" "divbuf_22/VDD"
-merge "divbuf_22/VDD" "divbuf_21/VDD"
-merge "divbuf_21/VDD" "divbuf_20/VDD"
-merge "divbuf_20/VDD" "ro_complete_0/ro_var_extend_0/vdd"
-merge "ro_complete_0/ro_var_extend_0/vdd" "divbuf_11/VDD"
-merge "divbuf_11/VDD" "divbuf_12/VDD"
-merge "divbuf_12/VDD" "divbuf_13/VDD"
-merge "divbuf_13/VDD" "divbuf_14/VDD"
-merge "divbuf_14/VDD" "pd_4/tspc_r_0/VDD"
-merge "pd_4/tspc_r_0/VDD" "divbuf_18/VDD"
-merge "divbuf_18/VDD" "divbuf_17/VDD"
-merge "divbuf_17/VDD" "divbuf_16/VDD"
-merge "divbuf_16/VDD" "divbuf_15/VDD"
-merge "divbuf_15/VDD" "divider_3/w_n140_1520#"
-merge "divider_3/w_n140_1520#" "divbuf_23/VDD"
-merge "divbuf_23/VDD" "divbuf_24/VDD"
-merge "divbuf_24/VDD" "divbuf_25/VDD"
-merge "divbuf_25/VDD" "divider_0/w_n140_1520#"
-merge "divider_0/w_n140_1520#" "pll_full_0/divbuf_1/VDD"
-merge "pll_full_0/divbuf_1/VDD" "divbuf_19/VDD"
-merge "divbuf_19/VDD" "vdda1"
-merge "pd_5/VDD" "divider_3/w_2780_1920#" -1551.35 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -540948 -6780 0 0 0 0
-merge "divider_3/w_2780_1920#" "m4_71094_342284#"
-merge "divbuf_3/GND" "divbuf_0/GND" -148704 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -52750456 -261486 559716 -19876 559716 -19876 -227268 -28624 -970586 -120247 0 0 0 0
-merge "divbuf_0/GND" "ro_complete_1/ro_var_extend_0/gnd"
-merge "ro_complete_1/ro_var_extend_0/gnd" "ro_complete_1/cbank_0/gnd!"
-merge "ro_complete_1/cbank_0/gnd!" "ro_complete_1/cbank_1/gnd!"
-merge "ro_complete_1/cbank_1/gnd!" "ro_complete_1/cbank_2/gnd!"
-merge "ro_complete_1/cbank_2/gnd!" "ro_complete_1/a_n658_n10486#"
-merge "ro_complete_1/a_n658_n10486#" "divbuf_1/GND"
-merge "divbuf_1/GND" "divbuf_2/GND"
-merge "divbuf_2/GND" "pll_full_1/divbuf_0/GND"
-merge "pll_full_1/divbuf_0/GND" "pll_full_1/VSUBS"
-merge "pll_full_1/VSUBS" "divbuf_4/GND"
-merge "divbuf_4/GND" "divbuf_5/GND"
-merge "divbuf_5/GND" "divbuf_6/GND"
-merge "divbuf_6/GND" "divbuf_7/GND"
-merge "divbuf_7/GND" "divbuf_10/GND"
-merge "divbuf_10/GND" "divbuf_22/GND"
-merge "divbuf_22/GND" "li_98542_532082#"
-merge "li_98542_532082#" "li_94194_532116#"
-merge "li_94194_532116#" "li_89708_532082#"
-merge "li_89708_532082#" "li_84864_532082#"
-merge "li_84864_532082#" "li_79830_532134#"
-merge "li_79830_532134#" "li_75122_532100#"
-merge "li_75122_532100#" "li_70740_532116#"
-merge "li_70740_532116#" "li_64902_532082#"
-merge "li_64902_532082#" "li_59542_532082#"
-merge "li_59542_532082#" "li_116432_531140#"
-merge "li_116432_531140#" "li_111588_531088#"
-merge "li_111588_531088#" "li_106708_531174#"
-merge "li_106708_531174#" "li_102582_531124#"
-merge "li_102582_531124#" "divbuf_9/GND"
-merge "divbuf_9/GND" "divbuf_21/GND"
-merge "divbuf_21/GND" "li_116578_526242#"
-merge "li_116578_526242#" "li_111700_526260#"
-merge "li_111700_526260#" "li_106958_526260#"
-merge "li_106958_526260#" "li_102946_526208#"
-merge "li_102946_526208#" "li_98510_527246#"
-merge "li_98510_527246#" "li_94210_527212#"
-merge "li_94210_527212#" "li_89740_527228#"
-merge "li_89740_527228#" "li_84658_527246#"
-merge "li_84658_527246#" "li_79646_527246#"
-merge "li_79646_527246#" "li_75158_527160#"
-merge "li_75158_527160#" "li_70824_527228#"
-merge "li_70824_527228#" "li_64892_527178#"
-merge "li_64892_527178#" "li_59470_527246#"
-merge "li_59470_527246#" "cp_0/gnd!"
-merge "cp_0/gnd!" "li_52082_525878#"
-merge "li_52082_525878#" "divbuf_8/GND"
-merge "divbuf_8/GND" "divbuf_20/GND"
-merge "divbuf_20/GND" "divbuf_11/GND"
-merge "divbuf_11/GND" "divbuf_12/GND"
-merge "divbuf_12/GND" "divider_1/prescaler_0/tspc_1/GND"
-merge "divider_1/prescaler_0/tspc_1/GND" "divider_1/a_n940_n20#"
-merge "divider_1/a_n940_n20#" "ro_complete_0/a_7790_n10640#"
-merge "ro_complete_0/a_7790_n10640#" "li_493680_472384#"
-merge "li_493680_472384#" "ro_complete_0/cbank_2/gnd!"
-merge "ro_complete_0/cbank_2/gnd!" "divbuf_13/GND"
-merge "divbuf_13/GND" "ro_complete_0/a_n658_n10486#"
-merge "ro_complete_0/a_n658_n10486#" "divbuf_14/GND"
-merge "divbuf_14/GND" "pd_4/and_pd_0/GND"
-merge "pd_4/and_pd_0/GND" "pd_4/a_n420_n1430#"
-merge "pd_4/a_n420_n1430#" "divbuf_18/GND"
-merge "divbuf_18/GND" "divbuf_17/GND"
-merge "divbuf_17/GND" "divbuf_16/GND"
-merge "divbuf_16/GND" "divbuf_15/GND"
-merge "divbuf_15/GND" "pd_5/a_n420_n1430#"
-merge "pd_5/a_n420_n1430#" "divider_3/prescaler_0/tspc_1/GND"
-merge "divider_3/prescaler_0/tspc_1/GND" "li_72962_341836#"
-merge "li_72962_341836#" "divider_3/a_n940_n20#"
-merge "divider_3/a_n940_n20#" "divbuf_23/GND"
-merge "divbuf_23/GND" "divbuf_24/GND"
-merge "divbuf_24/GND" "divbuf_25/GND"
-merge "divbuf_25/GND" "divider_0/gnd"
-merge "divider_0/gnd" "divider_0/a_n940_n20#"
-merge "divider_0/a_n940_n20#" "pll_full_0/divbuf_0/GND"
-merge "pll_full_0/divbuf_0/GND" "pll_full_0/VSUBS"
-merge "pll_full_0/VSUBS" "divbuf_19/GND"
-merge "divbuf_19/GND" "filter_1/gnd!"
-merge "filter_1/gnd!" "li_73400_82936#"
-merge "li_73400_82936#" "filter_1/gnd"
-merge "filter_1/gnd" "a_41202_607812#"
-merge "ro_complete_1/cbank_2/a1" "divbuf_6/OUT" -1190.13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 265460 -4288 0 0 0 0 0 0 0 0 0 0 0 0
-merge "divbuf_6/OUT" "li_487906_617190#"
-merge "ro_complete_1/a2" "ro_complete_1/cbank_2/a2" -1198.34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 308554 -4172 -4950 -155 0 0 0 0 0 0 0 0 0 0
-merge "ro_complete_1/cbank_2/a2" "divbuf_5/OUT"
-merge "divbuf_5/OUT" "li_488390_621994#"
-merge "ro_complete_1/cbank_2/a3" "divbuf_4/OUT" -1546.85 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -143866 -4280 0 0 0 0 0 0 0 0 0 0 0 0
-merge "divbuf_4/OUT" "li_488854_626962#"
-merge "ro_complete_1/cbank_2/a4" "divbuf_2/OUT" -826.945 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 628426 -4232 -8190 0 0 0 0 0 0 0 0 0 0 0
-merge "divbuf_2/OUT" "li_489290_631692#"
-merge "ro_complete_1/a5" "ro_complete_1/cbank_2/a5" -2470.57 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29776 -8290 0 0 0 0 0 0 0 0 0 0 0 0
-merge "ro_complete_1/cbank_2/a5" "divbuf_1/OUT"
-merge "divbuf_1/OUT" "li_489702_636592#"
-merge "divbuf_19/OUT" "filter_1/v" -2499.41 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2240 -192 -1148884 -8951 0 0 0 0 0 0 0 0 0 0
-merge "filter_1/v" "li_54490_89576#"
+cap "io_analog[6]" "io_analog[6]" 47638.2
+merge "ro_complete_1/a_n658_n10486#" "cp_0/gnd!" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "cp_0/gnd!" "divider_1/a_n940_n20#"
+merge "divider_1/a_n940_n20#" "ro_complete_0/a_n658_n10486#"
+merge "ro_complete_0/a_n658_n10486#" "pd_4/a_n420_n1430#"
+merge "pd_4/a_n420_n1430#" "pd_5/a_n420_n1430#"
+merge "pd_5/a_n420_n1430#" "divider_3/a_n940_n20#"
+merge "divider_3/a_n940_n20#" "divider_0/a_n940_n20#"
+merge "divider_0/a_n940_n20#" "filter_1/gnd"
+merge "filter_1/gnd" "VSUBS"
