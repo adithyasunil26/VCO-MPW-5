@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1647495560
+timestamp 1647499758
 << metal2 >>
 rect 262 -400 318 240
 rect 853 -400 909 240
@@ -781,34 +781,26 @@ rect -50 352000 292050 352050
 rect -50 0 0 352000
 rect 292000 0 292050 352000
 rect -50 -50 292050 0
-use pll_full  pll_full_1
-timestamp 1647490915
-transform 1 0 23530 0 1 91283
-box -5794 -2690 26430 12835
-use divider  divider_0
+use divider  divider_3
 timestamp 1643048518
-transform 1 0 24135 0 1 221511
+transform 1 0 230890 0 1 292955
 box -490 -235 4690 2150
-use pd  pd_1
+use pd  pd_0
 timestamp 1647490915
-transform 1 0 32455 0 1 221594
+transform 1 0 33529 0 1 262420
 box -215 -855 1685 810
 use cp  cp_0
 timestamp 1640911461
 transform 1 0 28357 0 1 164976
 box -415 -1715 4690 2035
-use pd  pd_0
+use pd  pd_1
 timestamp 1647490915
-transform 1 0 33529 0 1 262420
+transform 1 0 32455 0 1 221594
 box -215 -855 1685 810
-use divider  divider_3
+use divider  divider_0
 timestamp 1643048518
-transform 1 0 230890 0 1 292955
+transform 1 0 24135 0 1 221511
 box -490 -235 4690 2150
-use pll_full  pll_full_0
-timestamp 1647490915
-transform 1 0 29976 0 1 320122
-box -5794 -2690 26430 12835
 << labels >>
 flabel metal3 s 291760 134615 292400 134671 0 FreeSans 560 0 0 0 gpio_analog[0]
 port 0 nsew signal bidirectional
