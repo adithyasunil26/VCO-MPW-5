@@ -4,15 +4,10 @@ tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
-use filter filter_0 1 0 76050 0 1 82626
-use cp cp_0 1 0 43822 0 1 529284
-use pd pd_0 1 0 73336 0 1 445716
-use pd pd_1 1 0 77346 0 1 341034
-use ro_complete ro_complete_0 1 0 494626 0 1 657438
-use ro_complete ro_complete_1 1 0 484618 0 1 479692
-use divider divider_0 1 0 500538 0 1 470950
-use divider divider_1 1 0 493606 0 1 258680
-use divider divider_2 1 0 63726 0 1 339084
+use divider divider_0 1 0 493606 0 1 258680
+use divider divider_1 1 0 500538 0 1 470950
+use ro_complete ro_complete_0 1 0 484618 0 1 479692
+use ro_complete ro_complete_1 1 0 494626 0 1 657438
 port "io_analog[4]" 42 329294 702300 334294 704800 m5
 port "io_analog[4]" 42 318994 702300 323994 704800 m5
 port "io_analog[5]" 43 227594 702300 232594 704800 m5
@@ -1415,12 +1410,7 @@ cap "io_analog[5]" "io_analog[5]" 48870.4
 cap "io_analog[6]" "io_analog[6]" 48136.6
 cap "io_analog[6]" "io_analog[6]" 58847.2
 cap "io_analog[6]" "io_analog[6]" 47638.2
-merge "ro_complete_0/w_n684_n10512#" "cp_0/gnd!" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "cp_0/gnd!" "divider_0/w_n966_n46#"
-merge "divider_0/w_n966_n46#" "ro_complete_1/w_n684_n10512#"
-merge "ro_complete_1/w_n684_n10512#" "pd_0/w_n446_n1456#"
-merge "pd_0/w_n446_n1456#" "pd_1/w_n446_n1456#"
-merge "pd_1/w_n446_n1456#" "divider_2/w_n966_n46#"
-merge "divider_2/w_n966_n46#" "divider_1/w_n966_n46#"
-merge "divider_1/w_n966_n46#" "filter_0/gnd"
-merge "filter_0/gnd" "VSUBS"
+merge "ro_complete_1/w_n684_n10512#" "divider_1/w_n966_n46#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "divider_1/w_n966_n46#" "ro_complete_0/w_n684_n10512#"
+merge "ro_complete_0/w_n684_n10512#" "divider_0/w_n966_n46#"
+merge "divider_0/w_n966_n46#" "VSUBS"
