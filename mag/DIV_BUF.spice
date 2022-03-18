@@ -1766,8 +1766,8 @@ C44 in w_70_n1420# 0.94fF
 .control
 run
 
-plot v(out) v(inp)-v(inn)
+plot v(out) v(in)
 
-plot db(v(out)/v(inp)-v(inn)) 180/PI*phase(v(out)/v(inp)-v(inn))
+hardcopy out.eps v(out)+2 v(in)
 
 .endc

@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1647611392
+timestamp 1647629769
 << metal2 >>
 rect 262 -400 318 240
 rect 853 -400 909 240
@@ -700,10 +700,6 @@ rect -50 352000 292050 352050
 rect -50 0 0 352000
 rect 292000 0 292050 352000
 rect -50 -50 292050 0
-use ro_complete  ro_complete_0
-timestamp 1643049347
-transform 1 0 32056 0 1 328773
-box -348 -5690 4661 1440
 << labels >>
 flabel metal3 s 291760 134615 292400 134671 0 FreeSans 560 0 0 0 gpio_analog[0]
 port 0 nsew signal bidirectional
